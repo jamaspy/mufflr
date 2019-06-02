@@ -1,5 +1,8 @@
 import React from "react"
 import SignIn from "../components/signin"
 export default() => (
-<h1>Hello</h1>
+    <div>
+<h1 style={{color:"grey"}}>mufflr</h1>
+<p style= {{color:"grey"}}>where fashion meets function</p>
+</div>
 )
