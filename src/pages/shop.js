@@ -1,5 +1,6 @@
 import React from "react"
-import SignIn from "../components/signin"
+import Layout from "../components/layout"
+
 export default() => (
     <div>
 <h1 style={{color:"grey"}}>mufflr</h1>

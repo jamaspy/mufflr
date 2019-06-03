@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from "gatsby"
+import styles from "../styles/layout.module.css"
 import Navbar from "./navbar"
 
 export default ({ children }) => (
