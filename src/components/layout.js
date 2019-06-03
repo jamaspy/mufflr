@@ -1,9 +1,9 @@
 import React from "react"
-import styles from "../styles/layout.module.css"
+import styles from "../styles/layout.module.scss"
 import Navbar from "./navbar"
 
 export default ({ children }) => (
-    <div>
+    <div className={styles.layout}>
     <Navbar />
         
         {children}

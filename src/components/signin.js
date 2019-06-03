@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from 'gatsby'
-import '../styles/signin.css'
+import '../styles/signin.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook} from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'

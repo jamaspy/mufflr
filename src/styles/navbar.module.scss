@@ -1,0 +1,35 @@
+@import "../styles/variables/colors";
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row ;
+    
+    &__nav{
+        margin-left: 30px;
+        display: inline-block;
+        
+    }
+    &__user{
+        
+        display: inline-block
+            }
+}
+
+
+.list{
+    color: $colorWhite;
+    
+    &__item{
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    &__item:hover{
+        color: pink;
+    }
+    
+}
+
+

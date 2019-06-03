@@ -1,0 +1,19 @@
+.shopGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  margin-top: 20px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.205);
+  -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+.right {
+  margin-top: 20px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.205);
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
