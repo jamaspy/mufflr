@@ -1,5 +1,10 @@
 import React from "react"
-import SignIn from "../components/signin"
+import Layout from "../components/layout"
+
 export default() => (
+<Layout>
+
 <h1>Hello</h1>
+
+</Layout>
 )
