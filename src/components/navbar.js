@@ -32,6 +32,15 @@ export default Navbar => (
           <Link
             style={{ color: "white" }}
             activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            to="/blog/"
+          >
+            Blog
+          </Link>
+          </li>
+        <li className={styles.list__item}>
+          <Link
+            style={{ color: "white" }}
+            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
             to="/contact/"
           >
             Contact

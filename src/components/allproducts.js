@@ -1,6 +1,8 @@
 import React, { Component } from "react"
-import Button from "../components/button"
+
 import {StaticQuery, graphql} from 'gatsby'
+import styles from "../styles/allproducts.module.scss"
+import Placeholder from "./placeholder"
 
 class Product extends Component{
     // constructor(){
@@ -34,10 +36,14 @@ class Product extends Component{
             const priceFloat = (price/100).toFixed(2);
             const formattedPrice = Intl.NumberFormat('en-US', {style: 'currency', currency}).format(priceFloat)
             return (
-                <form onSubmit={this.handleSubmit(id)}>
-                    <h2>{name} {formattedPrice}</h2>
+              <div className={styles.div}>
+                <Placeholder />
+                <form style={{width:300, backgroundColor:"#243B55", color:"white", fontWeight:300, padding:10}} onSubmit={this.handleSubmit(id)}>
+                    <h2>{name}</h2>
+                    <h2>{formattedPrice}</h2>
                     <button type="submit">Buy Now</button>
                 </form>
+                </div>
             )
         }
     }
@@ -64,7 +70,7 @@ class Product extends Component{
           <div>
             {data.allStripeSku.edges.map(({ node: sku })=>(
               <Product 
-                id={sku.id}
+                id="{sku.id}"
                 currency={sku.currency}
                 price={sku.price}
                 name={sku.attributes.name}

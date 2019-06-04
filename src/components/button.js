@@ -22,7 +22,7 @@ class Button extends Component{
                   });
             }}>
 
-                <button type="submit">Buy Jacket</button>
+                <button type="submit">Buy Now</button>
             </form>
         )
     }
