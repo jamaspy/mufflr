@@ -32,9 +32,9 @@ render(){
             <form action="#">
                 <h1>Create Account</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><FontAwesomeIcon icon={faAddressBook} /></a>
-                    <a href="#" class="social"><FontAwesomeIcon icon={faPaperPlane} /></a>
-                    <a href="#" class="social"><FontAwesomeIcon icon={faGhost} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faAddressBook} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faPaperPlane} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faGhost} /></a>
                 </div>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" />
@@ -47,14 +47,14 @@ render(){
             <form action="#">
                 <h1>Sign in</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><FontAwesomeIcon icon={faAddressBook} /></a>
-                    <a href="#" class="social"><FontAwesomeIcon icon={faPaperPlane} /></a>
-                    <a href="#" class="social"><FontAwesomeIcon icon={faGhost} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faAddressBook} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faPaperPlane} /></a>
+                    <a href="/shop/" class="social"><FontAwesomeIcon icon={faGhost} /></a>
                 </div>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
+                <a href="/shop/">Forgot your password?</a>
                 <button class="signInButton">
                     <Link to="/shop/">
                         Sign In
