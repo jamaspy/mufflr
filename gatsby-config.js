@@ -5,6 +5,9 @@ module.exports = {
     title: `mufflr`,
     description: `mufflr apparel - where fashion meets function`,
     author: `James Aspinall`,
+    social: {
+      twitter: `ThePeopleTester`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `muffle | fashion meets function`,
+        short_name: `mufflr`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -42,5 +45,13 @@ module.exports = {
     },
     
     `gatsby-plugin-sass`,
+    {
+      resolve:`gatsby-source-contentful`,
+      options:{
+        spaceId: `c509gk8rf91h`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      }
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`
   ],
 }

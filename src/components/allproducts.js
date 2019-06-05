@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import {StaticQuery, graphql} from 'gatsby'
 import styles from "../styles/allproducts.module.scss"
-import Placeholder from "./placeholder"
+
 
 class Product extends Component{
     // constructor(){

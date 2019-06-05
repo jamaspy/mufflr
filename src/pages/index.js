@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 export default() => (
 <>
-<SEO title="Home" />
+<SEO title="Index" />
 <SignIn />
 
 </>

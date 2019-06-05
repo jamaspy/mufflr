@@ -1,29 +1,16 @@
 import React from "react"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import styles from "../styles/home.module.scss"
-import {StaticQuery, graphql} from "gatsby"
+
 
 export default() => (
-/* <StaticQuery
-        query={graphql`
-        {
-        allStripeSku {
-            edges {
-              node {
-                id
-                currency
-                price
-                attributes {
-                  name
-                }
-              }
-            }
-          }
-        }
-        `}
-        render={data => (
-             */
+  
+  
     <div className = "shop">
+      
+      <SEO title="Home" />
         <Layout >
         
         <div className={styles.shopGridContainer}>
@@ -36,6 +23,7 @@ export default() => (
               
             </p>
             
+           
           </div>
         </div>
 
@@ -49,8 +37,4 @@ export default() => (
         
         </Layout>
     </div>
-// )}
-
-// />
-
 )
