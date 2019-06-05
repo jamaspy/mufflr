@@ -32,15 +32,17 @@ class Product extends Component{
         }
 
         render(){
-            const {id, currency, price, name } = this.props;
+          console.log(this.props);
+          
+            const {id, currency, price, name, image } = this.props;
             const priceFloat = (price/100).toFixed(2);
             const formattedPrice = Intl.NumberFormat('en-US', {style: 'currency', currency}).format(priceFloat)
             return (
               <div className={styles.div}>
-                <Placeholder />
-                <form style={{width:300, backgroundColor:"#243B55", color:"white", fontWeight:300, padding:10}} onSubmit={this.handleSubmit(id)}>
-                    <h2>{name}</h2>
-                    <h2>{formattedPrice}</h2>
+                <img style={{width:300, height:350}} src={image} alt=""/>
+                <form style={{maxWidth:300, backgroundColor:"#243B55", color:"white", fontWeight:300, padding:10}} onSubmit={this.handleSubmit(id)}>
+                    <p>{name}</p>
+                    <p>{formattedPrice}</p>
                     <button type="submit">Buy Now</button>
                 </form>
                 </div>
@@ -58,6 +60,7 @@ class Product extends Component{
                 id
                 currency
                 price
+                image
                 attributes {
                   name
                 }
@@ -70,10 +73,11 @@ class Product extends Component{
           <div>
             {data.allStripeSku.edges.map(({ node: sku })=>(
               <Product 
-                id="{sku.id}"
+                id={sku.id}
                 currency={sku.currency}
                 price={sku.price}
                 name={sku.attributes.name}
+                image={sku.image}
               />
             ))}
           </div>

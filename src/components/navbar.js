@@ -8,10 +8,21 @@ export default Navbar => (
   <div className={styles.navbar}>
     <div className={styles.navbar__nav}>
       <ul className={styles.list}>
+      <li className={styles.list__item}>
+          <Link
+            style={{ color: "white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
+            to="/home/"
+          >
+            Home
+          </Link>
+        </li>
+
+
         <li className={styles.list__item}>
           <Link
             style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
             to="/shop/"
           >
             Shop
@@ -21,17 +32,7 @@ export default Navbar => (
         <li className={styles.list__item}>
           <Link
             style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
-            to="/about/"
-          >
-            About
-          </Link>
-        </li>
-
-        <li className={styles.list__item}>
-          <Link
-            style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
             to="/blog/"
           >
             Blog
@@ -40,7 +41,7 @@ export default Navbar => (
         <li className={styles.list__item}>
           <Link
             style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
             to="/contact/"
           >
             Contact
@@ -54,7 +55,7 @@ export default Navbar => (
         <li className={styles.list__item}>
           <Link
             style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
             to="/profile/"
           >
             <FontAwesomeIcon style={{marginRight: 10}} icon={faUserAlt} />
@@ -64,7 +65,7 @@ export default Navbar => (
         <li className={styles.list__item}>
           <Link
             style={{ color: "white" }}
-            activeStyle={{ color: "white", borderBottom: "1px solid white" }}
+            activeStyle={{ color: "#bdbdbd", borderBottom: "1px solid white" }}
             to="/basket/"
           >
             <FontAwesomeIcon style={{marginRight: 10}} icon={faShoppingBasket} />

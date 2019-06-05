@@ -1,0 +1,58 @@
+@import "../styles/variables/colors";
+
+.shopGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  margin-top: 20px;
+  height: 94vh;
+  background-color: rgba(0, 0, 0, 0.205);
+  -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  display: flex;
+  justify-content: start;
+  // align-items: center;
+  flex-direction: column;
+}
+.right {
+  margin-top: 20px;
+  height: 94vh;
+  // background-color: rgba(255, 255, 255, 0.205);
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+.heading{
+  color: $colorWhite;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.subheading{
+  color: $colorGreyLight;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.welcome{
+  width:75%;
+  margin-left: 5%;
+
+  &__content{
+    color:$colorGreyLight;
+    text-align: justify;
+  }
+}

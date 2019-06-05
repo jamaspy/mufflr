@@ -56,7 +56,7 @@ render(){
                 <input type="password" placeholder="Password" />
                 <a href="/shop/">Forgot your password?</a>
                 <button class="signInButton">
-                    <Link to="/shop/">
+                    <Link to="/home/">
                         Sign In
                     </Link>
                 </button>
