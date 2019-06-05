@@ -7,7 +7,7 @@ import BackgroundImage from 'gatsby-background-image'
 const BackgroundSection = ({ className }) => (
     <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
+        desktop: file(relativePath: { eq: "bg.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
@@ -35,6 +35,7 @@ const BackgroundSection = ({ className }) => (
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
+  height: 100%;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;

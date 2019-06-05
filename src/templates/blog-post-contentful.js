@@ -18,17 +18,14 @@ class BlogPostContentfulTemplate extends React.Component {
           title={post.title}
           description={post.subtitle}
         />
-        <Link to="/">Home</Link>
-        <h1>{post.title}</h1>
-        <img src={post.image.fluid.src} alt=""/>
-        <div dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }}/>
-        <hr
-          style={{
-            marginBottom: "20px",
-          }}
-        />
+      <div style={{maxWidth:"80vw", margin:"0 auto"}}>
+        <h1 style={{color:"white"}}>{post.title}</h1>
+        <img style={{maxWidth:"100%", marginTop:20}} src={post.image.fluid.src} alt={post.title}/>
+        <div style={{color:"white"}}dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }}/>
         <Bio />
-
+        
+        
+   
         <ul
           style={{
             display: `flex`,
@@ -53,6 +50,7 @@ class BlogPostContentfulTemplate extends React.Component {
             )}
           </li>
         </ul>
+        </div>
       </Layout>
     )
   }

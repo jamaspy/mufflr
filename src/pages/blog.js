@@ -1,7 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -15,22 +13,22 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
+      
         {posts.map(({ node }) => {
           const title = node.title || node.slug
           return (
-            <div key={node.slug}>
+            <div style={{border:"1px solid black", margin:20, display:"inline-block"}} key={node.slug}>
               <h3
                 style={{
                   marginBottom: "10px",
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.slug}>
+                <Link style={{ color: `white`, boxShadow: `none` }} to={node.slug}>
                   {title}
                 </Link>
               </h3>
             
-              <p> {node.subtitle} </p>
+              <p style={{color:`white`}}> {node.subtitle} </p>
             </div>
           )
         })}
