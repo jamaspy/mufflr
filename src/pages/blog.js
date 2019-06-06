@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import styles from "../styles/blogcard.module.scss"
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,18 +17,23 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.title || node.slug
           return (
-            <div style={{border:"1px solid black", margin:20, display:"inline-block"}} key={node.slug}>
-              <h3
-                style={{
-                  marginBottom: "10px",
-                }}
-              >
-                <Link style={{ color: `white`, boxShadow: `none` }} to={node.slug}>
-                  {title}
-                </Link>
-              </h3>
-            
+            <div className={styles.displayCards}>
+            <div className={styles.card} key={node.slug}>
+            <Link to={node.slug}> 
+              <div className={styles.card__head}>
+              <img src={node.image.fluid.src} alt={node.title} style={{width:"100%", height:300}}/>
+                <h3>
+                  <Link style={{ color: `white`, boxShadow: `none`, fontWeight: 300, fontSize:"2rem" }} to={node.slug}>
+                    {title}
+                  </Link>
+                </h3>
+              </div>
+            </Link>
+              <div className={styles.card__body}>
               <p style={{color:`white`}}> {node.subtitle} </p>
+              </div>
+            </div>
+            
             </div>
           )
         })}
@@ -53,6 +58,11 @@ export const pageQuery = graphql`
             subtitle
             author
             slug
+            image{
+              fluid{
+                src
+              }
+            }
         }
       }
     }

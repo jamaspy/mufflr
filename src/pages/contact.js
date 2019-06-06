@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
+
 export default() => (
 <Layout>
-    <p>contact</p>
+  <h1>CONTACT</h1>
 </Layout>
 )

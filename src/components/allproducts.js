@@ -41,8 +41,8 @@ class Product extends Component{
               <div className={styles.div}>
                 <img style={{width:300, height:350}} src={image} alt=""/>
                 <form style={{maxWidth:300, backgroundColor:"#243B55", color:"white", fontWeight:300, padding:10}} onSubmit={this.handleSubmit(id)}>
-                    <p>{name}</p>
-                    <p>{formattedPrice}</p>
+                    <p style={{fontSize:"1.2rem", margin:0 }}>{name}</p>
+                    <p style={{fontWeight:"bold", margin:"10px 0 10px 0"}}>{formattedPrice}</p>
                     <button type="submit">Buy Now</button>
                 </form>
                 </div>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 @import "../styles/variables/colors";
 
 .shopGridContainer {
@@ -13,14 +14,12 @@
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   display: flex;
   justify-content: start;
-  // align-items: center;
+  
   flex-direction: column;
 }
 .right {
   margin-top: 20px;
   height: 94vh;
-  // background-image: url(../images/bg.jpg);
-  background-size: cover;
   -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   display: flex;

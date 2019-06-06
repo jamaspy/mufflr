@@ -21,11 +21,7 @@ class BlogPostContentfulTemplate extends React.Component {
       <div style={{maxWidth:"80vw", margin:"0 auto"}}>
         <h1 style={{color:"white"}}>{post.title}</h1>
         <img style={{maxWidth:"100%", marginTop:20}} src={post.image.fluid.src} alt={post.title}/>
-        <div style={{color:"white"}}dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }}/>
-        <Bio />
-        
-        
-   
+        <div style={{color:"white", textAlign:"justify"}}dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }}/>
         <ul
           style={{
             display: `flex`,
@@ -37,19 +33,20 @@ class BlogPostContentfulTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={previous.slug} rel="prev">
+              <Link style={{color:"white"}} to={previous.slug} rel="prev">
                 ← {previous.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.slug} rel="next">
+              <Link style={{color:"white"}} to={next.slug} rel="next">
                 {next.title} →
               </Link>
             )}
           </li>
         </ul>
+        <Bio />
         </div>
       </Layout>
     )

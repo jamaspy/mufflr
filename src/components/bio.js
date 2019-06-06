@@ -21,6 +21,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
+              marginTop: `20px`,
               marginBottom: `20px`,
             }}
           >
@@ -38,10 +39,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Sydney building useful things.
+              Written by <strong>{author}</strong> who lives and works in Bronte learning to make pretty &amp; useful things on the internet.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Follow Me On Twitter
               </a>
             </p>
           </div>

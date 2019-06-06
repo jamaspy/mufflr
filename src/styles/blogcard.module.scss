@@ -1,0 +1,33 @@
+.displayCards{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+@import "../styles/variables/colors"; 
+.card{
+    background: linear-gradient($colorBlueDark 0, $colorBlueLight 100%);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s;
+    &:hover{
+        transform: translateY(-1.1rem) scale(1.03); 
+        box-shadow: 0 1.5rem 4rem rgba($colorBlack, 0.4);
+    }
+    
+    &__image{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    &__head{
+        
+    }
+    &__body{
+        padding: 10px;
+    }
+}

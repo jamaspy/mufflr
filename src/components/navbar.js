@@ -4,6 +4,7 @@ import styles from "../styles/navbar.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
 
+
 export default Navbar => (
   <div className={styles.navbar}>
     <div className={styles.navbar__nav}>
@@ -74,5 +75,6 @@ export default Navbar => (
         </li>
       </ul>
     </div>
-  </div>
+    
+      </div>
 )
